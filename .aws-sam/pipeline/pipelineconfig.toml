@@ -1,0 +1,23 @@
+version = 0.1
+[default]
+[default.pipeline_bootstrap]
+[default.pipeline_bootstrap.parameters]
+pipeline_user = "arn:aws:iam::824340209398:user/aws-sam-cli-managed-dev-pipeline-reso-PipelineUser-1K5LVD06TL8P9"
+
+[dev]
+[dev.pipeline_bootstrap]
+[dev.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::824340209398:role/aws-sam-cli-managed-dev-pipe-PipelineExecutionRole-MRDC5647JFW5"
+cloudformation_execution_role = "arn:aws:iam::824340209398:role/aws-sam-cli-managed-dev-p-CloudFormationExecutionR-1Q4UKIECB7ML2"
+artifacts_bucket = "aws-sam-cli-managed-dev-pipeline-artifactsbucket-10vkmcsjnw7za"
+image_repository = ""
+region = "ap-southeast-1"
+
+[prod]
+[prod.pipeline_bootstrap]
+[prod.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::824340209398:role/aws-sam-cli-managed-prod-pip-PipelineExecutionRole-1AQA2XPIE6VY1"
+cloudformation_execution_role = "arn:aws:iam::824340209398:role/aws-sam-cli-managed-prod-CloudFormationExecutionR-1B2ND4NO6JVCA"
+artifacts_bucket = "aws-sam-cli-managed-prod-pipeline-artifactsbucket-ledfpfudohox"
+image_repository = ""
+region = "ap-southeast-1"
